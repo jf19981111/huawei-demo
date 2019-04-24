@@ -1,0 +1,643 @@
+/*版芯*/
+.container {
+	width: 1200px;
+	margin: 0 auto;
+}
+/*sortcut S*/
+#sortcut {
+	background: #f9f9f9;
+}
+.sortcut_inner {
+	background: #f9f9f9;
+	min-height: 36px;
+}
+/*顶部  左边S*/
+.sortcut_inner .s_sub {
+	float: left;
+}
+.sortcut_inner .s_sub li {
+	float: left;
+    padding: 0 8px;
+    position: relative;
+}
+.sortcut_inner .s_sub li:hover>a{
+	color: #ca151d;
+}
+.sortcut_inner .s_sub li:before {
+	content: "";
+    width: 1px;
+    height: 10px;
+    display: block;
+    position: absolute;
+    top: 13px;
+    left: 0;
+    background: #d3d3d3;
+}
+.sortcut_inner .s_sub li:nth-child(1):before{
+	display: none;
+}
+.sortcut_inner .s_sub li a{
+	display: inline-block;
+	font-size: 12px;
+	color: #a4a4a4;
+	line-height: 36px;
+	text-align: center;
+}
+.sortcut_inner .s_sub li:last-child a i{
+	display: inline-block;
+	font-size: 12px;
+	vertical-align: top;
+}
+.sortcut_inner .s_sub li:last-child:hover .icon-dropdown {
+	color: #ca151d;
+}
+/*更多*/
+.sortcut_inner .s-dropdown {
+    position: relative;
+    z-index: 310;
+    margin: 0 -9px;
+    height: 36px;
+}
+.sortcut_inner .s-dropdown .h {
+    position: relative;
+    padding: 0 12px 0 10px;
+    height: 36px;
+}
+.sortcut_inner .s-dropdown .icon-dropdown {
+    position: relative;
+    padding-right: 10px;
+}
+.sortcut_inner .dropdown-more {
+    width: 119px;
+    padding: 6px 0 12px 0;
+    text-align: center;
+    line-height: 32px;
+}
+.sortcut_inner .s-dropdown:hover .h {
+    background: #fff;
+    z-index: 100;
+}
+.sortcut_inner .s-dropdown:hover {
+    margin: 0 -9px;
+    box-shadow: 0 2px 36px 0 rgba(0,0,0,0.07);
+    z-index: 311;
+}
+/*顶部 右边 S*/
+.sortcut_inner .s_main {
+	float: right;
+}
+.sortcut_inner .s_main ul li {
+	float: left;
+	padding: 0 8px;
+    position: relative;
+}
+.sortcut_inner .s_main ul li a:hover {
+	color: #ca151d;
+	position: relative;
+}
+.sortcut_inner .s_main ul li:before {
+	content: "";
+    width: 1px;
+    height: 10px;
+    display: block;
+    position: absolute;
+    top: 13px;
+    left: 0;
+    background: #d3d3d3;
+}
+.sortcut_inner .s_main ul li:first-child {
+	padding-left: 0;
+}
+.sortcut_inner .s_main ul li:nth-child(1):before {
+	display: none;
+}
+.sortcut_inner .s_main ul li a {
+	display: inline-block;
+	font-size: 12px;
+	color: #a4a4a4;
+	line-height: 36px;
+	text-align: center;
+}
+.sortcut_inner .s_main ul li:last-child {
+	background: #f2f2f2;
+}
+.sortcut_inner .s_main ul li:last-child:before {
+	display: none;
+}
+.sortcut_inner .s_main ul li:last-child:hover {
+	background: #fff;
+    box-shadow: 0 2px 36px 0 rgba(0,0,0,0.07);
+    z-index: 311;
+}
+/*迷你购物车设计*/
+.sortcut_inner .h {
+	position: relative;
+    padding: 0 12px 0 10px;
+    height: 36px;
+}
+.sortcut_inner .b {
+    display: none;
+    position: absolute;
+    top: 36px;
+    right: 0;
+    background: #fff;
+    box-shadow: 0 2px 36px 0 rgba(0,0,0,0.07);
+    border-radius: 8px 0 8px 8px;
+}
+.shortcut .dropdown-minicart {
+    color: #3a3a3a;
+}
+.minicart-pro-empty {
+    width: 460px;
+    text-align: center;
+    padding: 20px 0;
+    line-height: 1;
+    font-size: 14px;
+    color: #a4a4a4;
+}
+.minicart-pro-empty .icon-minicart {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 16px;
+    background: url(../images/icon-header-minicart.png) no-repeat;
+    border-radius: 50px;
+}
+.minicart-pro-empty a {
+    width: 148px;
+    height: 38px;
+    line-height: 38px;
+    display: block;
+    margin: 0 auto;
+    color: #ca141d;
+    border-radius: 2px;
+    border: 1px solid #a4a4a4;
+    color: #3a3a3a;
+    margin-top: 20px;
+}
+.minicart-pro-empty a:hover {
+	border: 1px solid #ca141d;
+}
+
+/*sortcut E*/
+
+/*header S*/
+.header {
+	background: #fff;
+}
+.header_inner {
+	min-height: 74px;
+}
+/*logo部分*/
+.header_inner .logo {
+	float: left;
+	margin-right: 34px;
+}
+.header_inner .logo h1{
+	float: left;
+}
+.header_inner .logo h1 a:nth-child(1) {
+	width: 114px;
+	height: 23px;
+	float: left;
+	text-indent: -9999px;
+}
+.header_inner .logo h1 em{
+	width: 1px;
+    height: 18px;
+    background: #030000;
+    float: left;
+    margin: 0 8px;
+    margin-top: 27px;
+}
+.header_inner .logo h1 a:nth-child(3) {
+	float: left;
+	width: 106px;
+	height: 16px;
+	margin-top: 29px;
+}
+/*nav部分*/
+.header_inner .nav {
+	float: left;
+	margin-top: 20px;
+}
+.header_inner .nav li {
+	float: left;
+	margin-right: 24px;
+}
+.header_inner .nav li a {
+	font-size: 14px;
+    color: #333;
+    position: relative;
+    line-height: 40px;
+    display: block;
+}
+.header_inner .nav li:hover a {
+	color: #ca141d;
+}
+/*search 部分*/
+.header_inner .search {
+	float: right;
+	margin-top: 23px;
+	position: relative;
+}
+.header_inner .search form{
+	line-height: 1;
+    width: 320px;
+    height: 30px;
+    background: #f0f0f0;
+    border-radius: 15px;
+    position: relative;
+}
+.header_inner .search form .txt{
+	border: 0;
+    color: #3a3a3a;
+    width: 285px;
+    text-indent: 15px;
+    height: 30px;
+    line-height: 30px;
+    background: transparent;
+    float: left;
+}
+.header_inner .search form .sub{
+	width: 35px;
+    height: 30px;
+    cursor: pointer;
+    border: 0;
+    overflow: hidden;
+    position: absolute;
+    background: transparent;
+    padding-right: 10px;
+    right: 0;
+    top: 0;
+    color: #353535;
+    font-size: 20px;
+    z-index: 1;
+}
+.header_inner .search form i {
+	position: absolute;
+	margin-top: 7px;
+	cursor: pointer;
+}
+.header_inner .search .search_key {
+	position: absolute;
+    max-width: 260px;
+    right: 31px;
+    bottom: 6px;
+    z-index: 100;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.header_inner .search .search_key .s_key{
+	color: #999;
+    font-size: 12px;
+    margin-right: 14px;
+}
+.header_inner .search .search_key .s_key a:hover {
+	color: #DF5000;
+}
+/*搜索补全*/
+.autoComplete-w1 {
+	position: absolute;
+	top: 40px;
+	left: 0;
+	z-index: 306;
+}
+.autoComplete-w1 .autoComplete {
+	background: #fff;
+    box-shadow: 0 2px 36px 0 rgba(0,0,0,0.07);
+    width: 320px!important;
+    border-radius: 8px;
+}
+.autoComplete-w1 .autoComplete div {
+	width: 288px;
+	height: 30px;
+	line-height: 30px;
+	white-space: nowrap;
+	color: #333;
+	overflow: hidden;
+	padding: 0 15px 0 17px;
+	text-overflow: ellipsis;
+}
+.autoComplete-w1 .autoComplete div a {
+	display: block;
+}
+.autoComplete-w1 .autoComplete div.selected {
+	background: #eee;
+}
+.autoComplete-w1 .autoComplete div:first-child {
+	border-radius: 8px 8px 0 0;
+}
+.autoComplete-w1 .autoComplete em {
+	color: #ff6a6e;
+}
+/*header E*/
+
+/*hungBar S*/
+.hungBar {
+	position: fixed;
+    right: 6px;
+    bottom: 61px;
+    /*height: 166px;*/
+    z-index: 200;
+}
+.hungBar .hungBar_content {
+	width: 38px;
+    padding: 1px 0;
+    background-color: rgba(255,255,255);
+    border-radius: 2px;
+}
+.hungBar .hungBar_content a{
+	width: 38px;
+    height: 41px;
+    display: block;
+    position: relative;
+}
+.hungBar .hungBar_content span{
+	position: absolute;
+    display: none;
+    width: 76px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    color: #777;
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 0 2px 36px 0 rgba(0,0,0,0.07);
+    left: -84px;
+    top: 0;
+    font-style: normal;
+}
+.hungBar .hungBar_content span:after {
+	content: "";
+    width: 0;
+    height: 0;
+    display: block;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 6px solid #fff;
+    position: absolute;
+    top: 13px;
+    right: -6px;
+}
+.hungBar .hungBar_content a:hover span {
+	display: block;
+}
+.hungBar .hungBar_content a i {
+	font-size: 24px;
+	display: inline-block;
+	margin: 6px;
+}
+.hungBar a em {
+	display: none;
+    position: absolute;
+    background: #ca141d;
+    color: #fff;
+    height: 18px;
+    min-width: 14px;
+    padding: 0 2px;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 18px;
+    left: 19px;
+    font-size: 12px;
+    top: 2px;
+}
+/*hungBar E*/
+
+/*footer S*/
+.footer {
+	background: #f9f9f9;
+}
+.footer_inner {
+	min-height: 400px;
+	background: #f9f9f9;
+}
+/*slogan 部分*/
+.footer_inner .slogan {
+	padding: 22px 0 20px;
+}
+.footer_inner .slogan li {
+	display: table-cell;
+	font-size: 16px;
+	height: 40px;
+	color: #333;
+	text-align: center;
+	vertical-align: middle;
+}
+.footer_inner .slogan i {
+	display: inline-block;
+	vertical-align: middle;
+	width: 40px;
+	height: 40px;
+	margin-right: 15px;
+	background: url(../images/sprites1.png) no-repeat;
+}
+.footer_inner .slogan .s1, .footer_inner .slogan .s2{
+	padding-right: 120px;
+}
+.footer_inner .slogan .s3 {
+	padding-right: 110px;
+}
+.footer_inner .slogan .s2 i {
+	background-position: -58px 0;
+}
+.footer_inner .slogan .s3 i {
+	background-position: -122px 0;
+}
+.footer_inner .slogan .s4 i {
+	background-position: -182px 0;
+}
+/*service 部分*/
+.footer_inner .service {
+	border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 23px 0 24px;
+}
+.footer_inner .service .s_left{
+	float: left;
+	width: 920px;
+    padding-top: 5px;
+    border-right: 1px solid #e5e5e5;
+}
+.service .s_left dl {
+	width: 16%;
+	float: left;
+}
+.service .s_left .s_title {
+	font-size: 14px;
+    padding-bottom: 10px;
+    color: #333;
+    line-height: 1.5;
+}
+.service .s_left dl a:hover {
+	color: #900;
+}
+.service .s_left dd {
+	margin-left: 0;
+}
+.service .s_left dd li {
+	line-height: 22px;
+	font-size: 12px;
+}
+.service .s_left dd li a {
+	color: #777;
+}
+.footer_inner .service .s_right {
+	float: right;
+	width: 279px;
+	min-height: 160px;
+	padding-top: 10px;
+}
+.service .s_right .s7 {
+	text-align: center;
+}
+.service .s_right .s7 .s_title {
+	font-size: 18px;
+	color: #575757;
+	text-align: center;
+	margin-bottom: 15px;
+}
+.service .s_right .s7 dd {
+	font-size: 14px;
+	color: #333;
+	line-height: 22px;
+}
+.service .s_right .s7 dd .s_btn {
+	color: #fff;
+	font-size: 14px;
+	display: block;
+	width: 170px;
+	height: 34px;
+	background: #333;
+	border-radius: 16px;
+	text-align: center;
+	line-height: 34px;
+	margin-top: 15px;
+	margin-left: 22px;
+}
+.service .s_right .s7 dd .s_btn i{
+	display: inline-block;
+    margin-right: 6px;
+    vertical-align: middle;
+    top: -1px;
+}
+.service .s_right .s7 dd .s_btn:hover {
+	background: #777;
+}
+.service .s_right .service_code {
+	float: left;
+	width: 250px;
+	margin-top: 26px;
+	margin-left: 40px;
+}
+.service .s_right .service_code h2 {
+	font-size: 14px;
+	color: #333;
+	float: left;
+}
+.service .s_right .service_code ul {
+	float: left;
+	margin-left: 3px;
+}
+.service .s_right .service_code li {
+	float: left;
+	width: 22px;
+	height: 16px;
+	margin-right: 11px;
+	background: url(../images/sprites1.png) no-repeat;
+}
+.service .s_right .service_code li a {
+	display: block;
+	width: 22px;
+	height: 16px;
+}
+.service .s_right .service_code li:hover a{
+	color: #787878;
+}
+.service .s_right .service_code li:nth-child(1) {
+	background-position: 0 -64px;
+}
+.service .s_right .service_code li:nth-child(2) {
+	background-position: -33px -64px;
+}
+.service .s_right .service_code li:nth-child(3) {
+	background-position: -67px -64px;
+}
+.service .s_right .service_code li:nth-child(4) {
+	background-position: -101px -65px;
+}
+.footer_inner .f_bto {
+	padding: 22px 0 22px;
+	min-height: 60px;
+}
+.f_bto .f_logo {
+	width: 80px;
+	height: 20px;
+	padding: 3px 20px 0 0;
+	float: left;
+}
+.f_bto .f_logo a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.f_bto .f_logo img{
+	float: left;
+	width: 82px;
+	height: 20px;
+}
+.f_bto .f1 {
+	float: left;
+}
+.f_bto .f1 .f_link {
+	margin-top: 3px;
+	margin-bottom: 4px;
+}
+.f_bto .f1 .f_link li {
+	float: left;
+    line-height: 1;
+    padding-right: 6px;
+    border-right: 1px solid #d3d3d3;
+    margin-right: 6px;
+    font-size: 10px;
+}
+.f_bto .f1 .f_link a {
+	color: #777;
+}
+.f_bto .f1 .f_link li:last-child {
+	border-right : 0;
+}
+.f_bto .f1 a{
+	font-size: 10px;
+	color: #a4a4a4;
+}
+.f_bto .f1 a:hover {
+	color: #900;
+}
+.f_bto .f1 em{
+	padding-right: 3px;
+    margin-left: 3px;
+}
+.f_bto .f_img {
+	float: right;
+	height: 24px;
+	margin-top: 2px;
+}
+.f_bto .f_img a {
+	display: inline-block;
+	margin-left: 6px;
+}
+.f_bto .f_img a i {
+	display: block;
+	width: 70px;
+	height: 24px;
+	background: url(../images/sprites1.png) no-repeat;
+	background-position: 0 -102px;
+}
+.f_bto .f_img a:nth-child(2) i {
+	background-position: -78px -102px;
+	margin-left: 16px;
+}
+/*footer E*/

@@ -1,0 +1,177 @@
+/*header 阴影*/
+.header {
+	box-shadow: 0 3px 6px rgba(0,0,0,0.04);
+}
+.hr-10 {
+	height: 10px;
+}
+.hr-20 {
+	height: 20px;
+}
+.hr-40 {
+	height: 40px;
+}
+/*main S*/
+.main_inner {
+	/*min-height: 1000px;*/
+	margin-bottom: 20px;
+}
+/*面包屑*/
+.bread_area {
+	color: #B2B2B2;
+	margin-left: 1px;
+	padding-top: 10px;
+	line-height: 1.5;
+}
+.bread_area a {
+	color: #666;
+}
+/*nav S*/
+/*商品类别 S*/
+.nav .category {
+	height: 103px;
+	border: 1px solid #ccc;
+}
+.category .c_attr {
+	border-bottom: 1px solid #dedede;
+}
+.category .p_title {
+	float: left;
+	width: 86px;
+	padding-top: 16px;
+	text-align: right;
+	color: #333;
+}
+.category .p_default {
+	float: left;
+	padding: 16px 0px 0 10px;
+}
+.category .p_default a {
+	color: #e01d20;
+}
+.category .p_expend {
+	float: left;
+	margin-right: 80px;
+	height: 30px;
+	margin-left: 20px;
+	padding: 10px 0;
+}
+.category .p_expend li {
+	float: left;
+	margin-right: 20px;
+	padding: 6px 0;
+	height: 18px;
+	line-height: 18px;
+}
+.category  .p_expend li a {
+	color: #999;
+}
+.category .p_expend li a:hover {
+	color: #333;
+}
+.sort_add {
+	position: relative;
+}
+.sort_add s {
+	position: absolute;
+	top: 50%;
+	right: 0;
+	font-size: 0;
+	line-height: 0;
+	width: 8px;
+	overflow: hidden;
+	background: transparent url(../images/icon1.png) no-repeat;
+}
+.category .c_sort .p_default s {
+	height: 10px;
+	right: -12px;
+	margin-top: -5px;
+	background-position: 0 -110px;
+}
+.category .c_sort .p_expend .sort1 s,.category .c_sort .p_expend .sort2 s{
+	height: 10px;
+	right: -12px;
+	margin-top: -5px;
+	background-position: 0 -70px;
+}
+/*商品类别 E*/
+/*nav E*/
+/*商品列表 S*/
+.channel_list .pro_list li {
+	float: left;
+	width: 20%;
+}
+.channel_list .pro_list .pro_panels {
+	margin: 0 20px 20px 0;
+	border: 1px solid #dedede;
+	height: 362px;
+	position: relative;
+	text-align: center;
+}
+.channel_list .pro_list .p_img {
+	padding: 40px 0 24px 19px;
+	text-align: center;
+}
+.channel_list .pro_list .p_img img {
+	width: 180px;
+	height: 180px;
+	vertical-align: top;
+}
+.channel_list .pro_list .p_name{
+	line-height: 16px;
+    padding: 0 20px;
+    min-height: 38px;
+    overflow: hidden;
+}
+.channel_list .pro_list .p_name a {
+	color: #666;
+}
+.channel_list .pro_list .p_name a span {
+	display: block;
+	margin-bottom: 5px;
+}
+.channel_list .pro_list .p_price {
+	color: #e01d20;
+}
+.channel_list .pro_list .p_price b {
+	font-size: 18px;
+}
+.channel_list .pro_list .p_button {
+	position: absolute;
+	left: -1px;
+    width: 220px;
+    bottom: -1px;
+}
+.channel_list .pro_list .p_button table {
+	width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+.channel_list .pro_list .p_button table td {
+	border: 1px solid #dedede;
+}
+.channel_list .pro_list .p_button td i{
+	display: block;
+    height: 30px;
+    line-height: 30px;
+    color: #666;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #e01d20;
+    text-align: center;
+    font-size: 14px;
+}
+.channel_list .pro_list .p_button td i:hover {
+	background: #e01d20;
+	color: #fff;
+	cursor: pointer;
+}
+.channel_list .pro_list .p_button td .p_score {
+	display: block;
+	color: #666;
+	height: 30px;
+	line-height: 30px;
+	overflow: hidden;
+}
+/*商品列表 E*/
+/*main E*/

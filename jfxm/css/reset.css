@@ -1,0 +1,40 @@
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,form,fieldset,legend,input,textarea,select {
+	margin: 0;
+	padding: 0;
+}
+body,html {
+	color: #a4a4a4;
+	font-size: 12px;
+}
+h1,h2,h3,h4,h5,h6{
+	font-size: 16px;
+	font-weight: normal;
+}
+b,strong{
+	font-weight: normal;
+}
+ul,ol,li{
+	list-style: none;
+}
+a{	color: #6c6c6c;
+	text-decoration: none;
+}
+img {
+	display: block;
+}
+i,em{
+	font-style: normal;
+}
+input{
+	outline: none;
+}
+.clearfix {
+	*zoom: 1;
+}
+.clearfix:after{
+	content: ".";
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}

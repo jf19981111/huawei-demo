@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>我的购物车</title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/shopping.css"/>
+		<script src="../js/jquery.js"></script>
+		
+	</head>
+	<body>
+		<!--sortcut S-->
+			<div id="sortcut">
+				<div class="sortcut_inner container">
+				<!--顶部 左边 -->
+					<div class="s_sub clearfix">
+						<ul>
+							<li><a href="index.html">首页</a></li>
+							<li><a href="#">华为官网</a></li>
+							<li><a href="#">荣耀官网</a></li>
+							<li><a href="#">花粉俱乐部</a></li>
+							<li><a href="#">V码(优购码)</a></li>
+							<li><a href="#">企业购</a></li>
+							<li><a href="#">Select Region</a></li>
+	<!--更多精彩有个二级菜单-->
+							<li>
+								<div id="s-dropdown" class="s-dropdown">
+			                        <div class="h">
+			                            <a href="#" class="icon-dropdown">
+			                            	更多精彩
+			                            	<i class="iconfont icon-xiajiantou"></i>
+			                            </a>
+			                        </div>
+			                        <div class="b" id="more">
+			                            <div class="dropdown-more w-119">
+			                                <dl>
+			                                    <dt><a href="#">EMUI</a></dt>
+			                                    <dt><a href="#')">应用市场</a></dt>
+			                                    <dt><a href="#">华为终端云空间</a></dt>
+			                                    <dt><a href="#">开发者联盟</a></dt>
+			                                </dl>
+			                            </div>
+			                        </div>
+                    			</div>
+							</li>
+						</ul>
+					</div>
+				<!--顶部 右边-->
+	<!--登录注册的js 还有购物车的实现-->
+					<div class="s_main clearfix">
+						<ul>
+							<li>
+								<div>
+									<a href="login.html">请登录</a>
+									<a href="register.html">注册</a>
+								</div>
+							</li>
+							<li><a href="#">我的订单</a></li>
+							<li><a href="#">客户服务</a></li>
+							<li><a href="#">网站导航</a></li>
+							<li><a href="#">手机版</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		<!--sortcut E-->
+		<!--header S-->
+			<div class="header">
+				<div class="header_inner container">
+				<!--logo 部分-->	
+					<div class="logo">
+						<h1>
+							<a href="index.html" title="Vmall.com-华为商城">
+								Vmall.com-华为商城
+								<img src="../images/logo.jpg" />
+							</a>
+							<span>我的购物车</span>
+						</h1>
+					</div>
+				
+				<!--search 部分-->
+		<!--表单的完善  历史记录什么的-->
+					<div class="search">
+						<form>
+							<input autocomplete="off" id="search" class="txt" type="text" value=""/>
+							<input type="submit" class="sub" value=""/>
+							<i class="iconfont icon-sousuo"></i>
+						</form>
+						<div class="search_key">
+							<div class="s_key" id="s_key">
+								<a href="carts.html">nova4</a>
+								<a href="carts.html">HUAWEI Mate 20</a>
+							</div>
+						</div>
+						<div class="complete" style="top: 179px;left: 954px;">
+							<div class="autoComplete-w1">
+								<div id="autoComplete" class="autoComplete" style="max-height: 400px;width: 285px;">
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		<!--header E-->
+			<div class="hr-60"></div>
+		
+		<!--选中商品 S-->
+			<div class="sc_list">
+				<div class="sc_list_inner container clearfix">
+				<!--购物车为空时 S-->
+					<div id="empty" style="display: none;">
+						<div class="sc_empty">
+							<span class="min_cart"></span>
+							<p>您的购物车里什么都没有哦~</p>
+							<a href="list.html">去逛逛</a>
+						</div>
+					</div>
+				<!--购物车为空时 E-->
+					<div class="wares">
+						<div class="sc_title clearfix" style="display: none;">
+							<label class="checkBox">
+								<input class="c2 checkBoxAll" type="checkbox" readonly="readonly" />
+								全选
+							</label>
+							<ul class="clearfix">
+								<li>商品</li>
+								<li>单价</li>
+								<li>数量</li>
+								<li>小计</li>
+								<li>操作</li>
+							</ul>
+						</div>
+						<!--<form method="get">
+							<div class="sc_pro">
+								<div>
+									<div class="sc_pro_list clearfix">
+										<label class="checkBox">
+											<input readonly="readonly" />
+										</label>
+										<div class="sc_pro_area">
+											<div class="pro_main clearfix">
+												<a class="p_img">
+													<img src="../images/main1.png" />
+												</a>
+												<ul>
+													<li>
+														<a href="#" class="p_name">HUAWEI Mate 20 Pro (UD) 8GB+128GB 全网通版（翡冷翠）</a>
+													</li>
+													<li>
+														<div class="sc_price">
+															<span>￥&nbsp;5999.00</span>
+														</div>
+													</li>
+													<li>
+														<div class="p_stock">
+															<div class="p_stock_area">
+																<input type="text" placeholder="1" value="1" class="p_text"/>
+																<p class="p_stock_btn">
+																	<a href="#">+</a>
+																	<a href="#" class="disabled">-</a>
+																</p>
+															</div>
+														</div>
+													</li>
+													<li class="sc_price_total">
+														￥&nbsp;5999.00
+													</li>
+													<li>
+														<a href="#" class="p_del">删除</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+							</div>	
+						</form>-->
+						
+					</div>
+					<div class="all sc-total-fixed">
+						<div class="sc_total_tool clearfix">
+							<div class="sc_total_control">
+								<label class="checkBox">
+									<input class="c1 checkBoxAll" type="checkbox" readonly="readonly" />
+									全选
+								</label>
+								<a class="delAll" href="javascript:;">删除</a>
+							</div>
+							<div class="sc_total_btn">
+								<a href="#">立即结算</a>
+							</div>
+							<div class="sc_total_price">
+								<p>
+									<label>总计：</label>
+									<i style="color: #ca151e;">￥</i><span class="totalPrice">0</span>
+								</p>
+								<div class="total_choose">
+									已选择<em class="totalCount">0</em>件商品
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		<!--选中商品 E-->
+
+			<div class="hr-60"></div>
+		<!--hungBar S-->
+				<div class="hungBar">
+					<div class="hungBar_content">
+						<a href="javascript:;" title="购物车">
+							<em id="cart"></em>
+							<span style="display: none;">购物车</span>
+							<i class="iconfont icon-gouwuche"></i>
+						</a>
+						<a href="javascript:;" title="在线客服">
+							<span style="display: none;">在线客服</span>
+							<i class="iconfont icon-zaixiankefu"></i>
+						</a>
+						<a href="javascript:;" title="意见反馈">
+							<span style="display: none;">意见反馈</span>
+							<i class="iconfont icon-yijianfankui"></i>
+						</a>
+						<a href="javascript:;" class="back" title="返回顶部" style="display: none;">
+							<span style="display: none;">返回顶部</span>
+							<i class="iconfont icon-fanhuidingbu"></i>
+						</a>
+					</div>
+				</div>
+		<!--hungBar E-->
+		
+		<!--footer S-->
+			<div class="footer">
+				<div class="footer_inner container">
+					<div class="slogan">
+						<ul>
+							<li class="s1">
+								<a href="#">
+									<i></i>
+									百强企业 品质保证
+								</a>
+							</li>
+							<li class="s2">
+								<a href="#">
+									<i></i>
+									七天退货 15天换货
+								</a>
+							</li>
+							<li class="s3">
+								<a href="#">
+									<i></i>
+									48元起免运费
+								</a>
+							</li>
+							<li class="s4">
+								<a href="#">
+									<i></i>
+									1000家维修网点 全国联保
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="service clearfix">
+						<div class="s_left">
+							<dl class="s1">
+								<dt>
+									<p class="s_title">购物相关</p>
+								</dt>
+								<dd>
+									<ol>
+										<li>
+											<a href="#">购物指南</a>
+										</li>
+										<li>
+											<a href="#">配送方式</a>
+										</li>
+										<li>
+											<a href="#">支付方式</a>
+										</li>
+										<li>
+											<a href="#">常见问题</a>
+										</li>
+									</ol>
+								</dd>
+							</dl>
+							<dl class="s2">
+								<dt>
+									<p class="s_title">保修与退换货</p>
+								</dt>
+								<dd>
+									<ol>
+										<li>
+											<a href="#">保修政策</a>
+										</li>
+										<li>
+											<a href="#">退换货政策</a>
+										</li>
+										<li>
+											<a href="#">退换货流程</a>
+										</li>
+										<li>
+											<a href="#">保修状态查询</a>
+										</li>
+										<li>
+											<a href="#">配件防伪查询</a>
+										</li>
+									</ol>
+								</dd>
+							</dl>
+							<dl class="s3">
+								<dt>
+									<p class="s_title">维修与技术支持</p>
+								</dt>
+								<dd>
+									<ol>
+										<li>
+											<a href="#">售后网点</a>
+										</li>
+										<li>
+											<a href="#">预约维修</a>
+										</li>
+										<li>
+											<a href="#">手机寄修</a>
+										</li>
+										<li>
+											<a href="#">配件价格查询</a>
+										</li>
+										<li>
+											<a href="#">上门服务</a>
+										</li>
+									</ol>
+								</dd>
+							</dl>
+							<dl class="s4">
+								<dt>
+									<p class="s_title">特色服务</p>
+								</dt>
+								<dd>
+									<ol>
+										<li>
+											<a href="#">防伪查询</a>
+										</li>
+										<li>
+											<a href="#">补够保障</a>
+										</li>
+										<li>
+											<a href="#">以旧换新</a>
+										</li>
+										<li>
+											<a href="#">礼品包装</a>
+										</li>
+									</ol>
+								</dd>
+							</dl>
+							<dl class="s5">
+								<dt>
+									<p class="s_title">关于我们</p>
+								</dt>
+								<dd>
+									<ol>
+										<li>
+											<a href="#">公司介绍</a>
+										</li>
+										<li>
+											<a href="#">华为商城简介</a>
+										</li>
+										<li>
+											<a href="#">华为线下门店</a>
+										</li>
+										<li>
+											<a href="#">荣耀线下门店</a>
+										</li>
+										<li>
+											<a href="#">诚征英才</a>
+										</li>
+										<li>
+											<a href="#">意见反馈</a>
+										</li>
+									</ol>
+								</dd>
+							</dl>
+							<dl class="s6">
+								<dt>
+									<p class="s_title">友情链接</p>
+								</dt>
+								<dd>
+									<ol>
+										<li>
+											<a href="#">华为集团</a>
+										</li>
+										<li>
+											<a href="#">华为CBG官网</a>
+										</li>
+										<li>
+											<a href="#">荣耀官网</a>
+										</li>
+										<li>
+											<a href="#">花粉俱乐部</a>
+										</li>
+										<li>
+											<a href="#">网站地图</a>
+										</li>
+									</ol>
+								</dd>
+							</dl>
+						</div>
+						<div class="s_right">
+							<dl class="s7">
+								<dt>
+									<p class="s_title">400-088-6888</p>
+								</dt>
+								<dd>
+									<ol>
+										<li>
+											7x24小时客服热线（仅收市话费）
+										</li>
+									</ol>
+								</dd>
+								<dd>
+									<a href="#" class="s_btn">
+										<i class="iconfont icon-zaixiankefu"></i>
+										在线客服
+									</a>
+								</dd>
+							</dl>
+							<div class="service_code">
+								 <h2>关注Vmall：</h2>
+								 <ul class="clearfix">
+								 	<li>
+								 		<a href="#"></a>
+								 	</li>
+								 	<li>
+								 		<a href="#"></a>
+								 	</li>
+								 	<li>
+								 		<a href="#"></a>
+								 	</li>
+								 	<li>
+								 		<a href="#"></a>
+								 	</li>
+								 </ul>
+							</div>
+						</div>
+					</div>
+					<div class="f_bto">
+						<p class="f_logo">
+							<a href="#">
+								<img src="../images/footer_logo.png"/>
+							</a>
+						</p>
+						<div class="f1">
+							<ul class="f_link clearfix">
+								<li>
+									<a href="#">华为集团</a>
+								</li>
+								<li>
+									<a href="#">华为CBG官网</a>
+								</li>
+								<li>
+									<a href="#">荣耀官网</a>
+								</li>
+								<li>
+									<a href="#">花粉俱乐部</a>
+								</li>
+								<li>
+									<a href="#">华为应用市场</a>
+								</li>
+								<li>
+									<a href="#">EMUI</a>
+								</li>
+								<li>
+									<a href="#">华为终端云空间</a>
+								</li>
+								<li>
+									<a href="#">开发者联盟</a>
+								</li>
+								<li>
+									<a href="#">华为商城手机版</a>
+								</li>
+								<li>
+									<a href="#">网站地图</a>
+								</li>
+							</ul>
+							<a href="#" title="隐私声明">隐私声明</a>
+							<a href="#" title="服务协议">服务协议</a>
+							<a href="#" title="服务协议">COOKIES</a>
+							Copyright © 2012-2019 华为软件技术有限公司 版权所有 保留一切权利 公安备案
+							<a href="#">苏公网安备32011402010009号</a><br />
+							<a href="#">苏ICP备17040376号-6</a>
+							<a href="#">增值电信业务经营许可证：苏B2-20130048号</a>
+							<em>|</em>
+							<a href="#">网络文化经营许可证：苏网文[2015] 1599-026号</a>
+							备案主体编号：32201911426827
+						</div>
+						<p class="f_img">
+							<a href="#">
+								<i></i>
+							</a>
+							<a href="#">
+								<i></i>
+							</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		<!--footer E-->
+<script src="../js/shopping.js"></script>
+	</body>
+</html>

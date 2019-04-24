@@ -1,0 +1,109 @@
+[
+	{	
+		"p_id" : "001",
+		"p_name" : "HUAWEI nova 4",
+		"p_img" : "../images/list1.png",
+		"p_price" : "3999",
+		"p_val" : "116663评价"
+	},
+	{
+		"p_id" : "002",
+		"p_name" : "华为畅享9",
+		"p_img" : "../images/list3.png",
+		"p_price" : "999",
+		"p_val" : "13930评价"
+	},
+	{
+		"p_id" : "003",
+		"p_name" : "华为畅享8 Plus",
+		"p_img" : "../images/list2.png",
+		"p_price" : "1499",
+		"p_val" : "147053评价"
+	},
+	{
+		"p_id" : "004",
+		"p_name" : "HUAWEI Mate 20 RS 保时捷设计",
+		"p_img" : "../images/list4.png",
+		"p_price" : "3399",
+		"p_val" : "20789评价"
+	},
+	{
+		"p_id" : "005",
+		"p_name" : "HUAWEI Mate 20 Pro",
+		"p_img" : "../images/list5.png",
+		"p_price" : "5999",
+		"p_val" : "155283评价"
+	},
+	{
+		"p_id" : "006",
+		"p_name" : "HUAWEI Mate 20",
+		"p_img" : "../images/list5.png",
+		"p_price" : "5999",
+		"p_val" : "155283评价"
+	},
+	{
+		"p_id" : "007",
+		"p_name" : "HUAWEI Mate 20 X",
+		"p_img" : "../images/list6.png",
+		"p_price" : "5999",
+		"p_val" : "155283评价"
+	},
+	{
+		"p_id" : "008",
+		"p_name" : "HUAWEI Mate 20 Pro",
+		"p_img" : "../images//list7.png",
+		"p_price" : "5999",
+		"p_val" : "155283评价"
+	},
+	{
+		"p_id" : "009",
+		"p_name" : "华为畅享 MAX",
+		"p_img" : "../images/list8.png",
+		"p_price" : "5999",
+		"p_val" : "155283评价"
+	},
+	{
+		"p_id" : "010",
+		"p_name" : "华为畅享9 Plus",
+		"p_img" : "../images/list9.png",
+		"p_price" : "5999",
+		"p_val" : "155283评价"
+	},
+	{
+		"p_id" : "011",
+		"p_name" : "HUAWEI 麦芒7",
+		"p_img" : "../images/list15.png",
+		"p_price" : "5999",
+		"p_val" : "155283评价"
+	},
+	{
+		"p_id" : "012",
+		"p_name" : "华为畅享8",
+		"p_img" : "../images/list11.png",
+		"p_price" : "5999",
+		"p_val" : "155283评价"
+	},
+	{
+		"p_id" : "013",
+		"p_name" : "HUAWEI P20 Pro",
+		"p_img" : "../images/list12.png",
+		"p_price" : "5999",
+		"p_val" : "155283评价"
+	},
+	{
+		"p_id" : "014",
+		"p_name" : "HUAWEI P20",
+		"p_img" : "../images/list13.png",
+		"p_price" : "5999",
+		"p_val" : "155283评价"
+	},
+	{
+		"p_id" : "015",
+		"p_name" : "HUAWEI Mate 10 Pro",
+		"p_img" : "../images/list14.png",
+		"p_price" : "5999",
+		"p_val" : "155283评价"
+	}
+
+
+]

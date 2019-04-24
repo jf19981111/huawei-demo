@@ -1,0 +1,253 @@
+.hr-60 {
+	height: 60px;
+}
+body,html {
+	background : #f5f5f5;
+}
+.logo span {
+	display: inline-block;
+	margin-left: 26px;
+    font-size: 22px;
+    line-height: 36px;
+    margin-top: 15px;
+    color: #333;
+}
+/*当购物车为空时 S*/
+.sc_empty {
+	padding-top: 135px;
+    height: 365px;
+    background: #fff;
+    text-align: center;
+    color: #7f7f7f;
+    font-size: 14px;
+}
+.sc_empty span {
+	display: block;
+	width: 100px;
+	height: 100px;
+	margin: 0 auto 36px;
+	background: url(../images/icon-header-minicart.png) no-repeat;
+}
+.sc_empty p {
+	font-size: 18px;
+	color: #a4a4a4;
+	margin-bottom: 16px;
+}
+.sc_empty a {
+	display: block;
+	width: 172px;
+	height: 46px;
+	line-height: 46px;
+	font-size: 18px;
+	color: #fff;
+	margin: 0 auto;
+	background: #ca141d;
+	border-radius: 2px;
+}
+/*当购物车为空时 E*/
+/*选中商品列表 S*/
+.sc_list .sc_title {
+	background: #fff;
+    line-height: 40px;
+    padding-left: 40px;
+    color: #a4a4a4;
+}
+.sc_title label {
+	float: left;
+	width: 150px;
+	line-height: 40px;
+}
+.checkBox input {
+	/*background: url(../images/sprites.png) no-repeat;*/
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	/*background-position: -18px -129px;*/
+	/*background-position: 0 -129px;*/
+	border: 0 none;
+	margin-right: 10px;
+	cursor: pointer;
+	vertical-align: text-bottom;
+}
+/*.checkbox input.checked {
+    background-position: 0 -129px;
+}*/
+.sc_list_inner ul {
+	float: left;
+}
+.sc_list_inner ul li {
+	float: left;
+	width: 100px;
+	min-height: 14px;
+	text-align: center;
+	margin-left: 30px;
+}
+.sc_list_inner ul li:first-child {
+	width: 450px;
+	text-align: left;
+	margin-left: 0;
+}
+.sc_pro_list {
+	background: #fff;
+    padding-left: 40px;
+    margin-top: 10px;
+    padding-top: 20px;
+}
+.sc_pro_list>label {
+	float: left;
+	margin: 43px 3px 0 0;
+}
+.sc_pro_area {
+	float: left;
+	width: 1130px;
+	font-size: 14px;
+}
+.pro_main {
+	position: relative;
+	margin-bottom: 18px;
+}
+.sc_pro_area .p_img {
+	float: left;
+	width: 100px;
+	height: 100px;
+	position: relative;
+	margin-right: 20px;
+}
+.sc_pro_area .p_img img {
+	width: 100%;
+	height: 100%;
+	border: 0 none;
+}
+.sc_pro_area a.p_name {
+	position: relative;
+	margin-bottom: 6px;
+	display: block;
+	overflow: hidden;
+	text-overflow: ellipsis;	
+}
+.sc_pro_area .sc_price span {
+	display: block;
+	margin-bottom: 3px;
+	color: #3a3a3a;
+}
+.p_stock {
+	text-align: center;
+}
+.p_stock_area {
+	display: block;
+	border: 1px solid #d6d6d6;
+	width: 63px;
+	height: 44px;
+	border-radius: 2px;
+	margin: 0 auto;
+}
+.p_stock_area .p_text {
+	float: left;
+	width: 41px;
+	height: 44px;
+	line-height: 44px;
+	font-size: 18px;
+	text-align: center;
+	border: 0 none;
+}
+.p_stock_area .p_stock_btn {
+	float: left;
+	width: 22px;
+}
+.p_stock_area .p_stock_btn:before {
+	content: "";
+	float: left;
+	width: 1px;
+	height: 44px;
+	background: #e2e2e2;
+}
+.p_stock_area .p_stock_btn a {
+	display: block;
+	width: 22px;
+	height: 21px;
+	line-height: 22px;
+	text-align: center;
+	font-weight: bold;
+	color: #777;
+	font-size: 16px;
+}
+.p_stock_area .p_stock_btn a.disabled {
+	color: #c4c4c4;
+	cursor: not-allowed;
+}
+.sc_pro_area .sc_price_total {
+	color: #ca141d;
+	font-weight: bold;
+}
+.sc_pro_area .p_del {
+	color: #a4a4a4;
+}
+.sc_total_tool {
+	background: #fff;
+    height: 60px;
+    margin-top: 10px;
+}
+.sc_total_tool .sc_total_control {
+	float: left;
+	line-height: 60px;
+}
+.sc_total_tool .sc_total_control label {
+	float: left;
+	margin-left: 40px;
+}
+.sc_total_tool .sc_total_control a {
+	float: left;
+	margin-left: 20px;
+}
+.sc_total_tool .sc_total_btn {
+	float: right;
+}
+.sc_total_tool .sc_total_btn a {
+	display: block;
+	width: 180px;
+	height: 60px;
+	line-height: 60px;
+	background: #ca151e;
+	color: #fff;
+	font-size: 18px;
+	text-align: center;
+}
+.sc_total_tool .sc_total_price {
+	float: right;
+	padding-right: 30px;
+	margin-top: 7px;
+	text-align: right;
+}
+.sc_total_tool .sc_total_price p {
+	position: relative;
+	font-size: 14px;
+	color: #333;
+}
+.sc_total_tool .sc_total_price p span {
+	color: #ca151e;
+	font-weight: bold;
+	font-size: 18px;
+}
+.sc_total_tool .total_choose {
+	color: #a4a4a4;
+}
+.sc_total_tool .total_choose em {
+	color: #ca151e;
+	margin: 0 5px;
+	font-weight: bold;
+}
+.sc_list_inner .sc-total-fixed {
+    background: #fff;
+    min-width: 1200px;
+    position: fixed;
+    width: 100%;
+    z-index: 50;
+    left: 0;
+    bottom: 0;
+    box-shadow: 0 -4px 4px 0 hsla(0,0%,47%,.2);
+    height: 60px;
+}
+.sc_list_inner .sc-total-fixed .sc-total-tool {
+    margin-top: 0;
+}
+/*选中商品列表 E*/

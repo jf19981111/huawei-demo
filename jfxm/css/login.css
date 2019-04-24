@@ -1,0 +1,200 @@
+/*版芯*/
+.container {
+	width: 1060px;
+	margin: 0 auto;
+}
+/*header S*/
+.header_inner {
+	min-height: 67px;
+}
+.header_inner .logo {
+	margin-top: 18px;
+	margin-left: 4px;
+	float: left;
+}
+.header_inner .logo h1 {
+	background: url(../images/logo.png) no-repeat;
+}
+.header_inner .logo h1 a {
+	display: block;
+	width: 165px;
+	height: 33px;
+	text-indent: -9999px;
+}
+.header_inner .h_name {
+	float: left;
+	color: #333;
+    font-size: 20px;
+    height: 18px;
+    line-height: 18px;
+    margin-top: 27px;
+}
+/*header E*/
+/*warn S*/
+.warn {
+	height: 40px;
+	line-height: 40px;
+	background: #fffbe4;
+	font-size: 12px;
+	color: #989898;
+	text-align: center;
+}
+/*warn E*/
+/*main S*/
+.main {
+	background: #081638;
+}
+.main_inner {
+	min-height: 590px;
+	margin-bottom: 24px;
+	background: #081638;
+	background-image: url(../images/banner.png);
+}
+.login_right {
+	width: 380px;
+	height: 530px;
+	float: right;
+	background: #fff;
+	margin-bottom: 30px;
+	margin-top: 30px;
+	position: relative;
+}
+.login_right .l_title {
+	width: 100%;
+	margin: 24px auto;
+	text-align: center;
+}
+.login_right .l_title span {
+	display: inline-block;
+	width: 169px;
+	font-size: 20px;
+	color: #333;
+	padding: 0 10px;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+}
+.actived {
+	color: #B40707!important;
+}
+.l_bottom {
+	min-height: 250px;
+	padding: 0 26px;
+}
+.l_bottom form input {
+	width: 328px;
+	height: 46px;
+	border: 0;
+	border-bottom: 1px solid #ccc;
+}
+.l_bottom input::-webkit-input-placeholder {
+	color: #ccc;
+	font-size: 12px;
+}
+.l_bottom .mess {
+	display: block;
+	margin: 17px 0;
+	color: #007dff;
+}
+.l_bottom .sub {
+	border-radius: 20px;
+	background: #b40707;
+	color: #fff;
+	text-align: center;
+	line-height: 46px;
+	cursor: pointer;
+	margin-bottom: 18px;
+}
+.l_bottom .note {
+	margin-bottom: 16px;
+}
+.l_bottom .note .more {
+	float: right;
+	color: #007dff;
+}
+.l_bottom .skip {
+	text-align: center;
+	margin-bottom: 100px;
+}
+.l_bottom .skip span {
+	padding-right: 10px;
+	border-right: 1px solid #ccc;
+	text-align: right;
+	line-height: 14px;
+}
+.l_bottom .skip span:nth-child(2) {
+	border: 0;
+	padding-left: 10px;
+	text-align: left;
+}
+.l_bottom .skip span a {
+	display: inline-block;
+	color: #007dff;
+}
+.l_bottom .line {
+	position: relative;
+	margin-bottom: 10px;
+}
+.l_bottom .line .l_left {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 94px;
+	height: 1px;
+	background-image: url(../images/thirdLine.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.l_bottom .line .tips {
+	z-index: 1;
+	color: #ccc;
+    vertical-align: middle;
+    text-align: center;
+    display: block;
+    position: relative;
+    padding: 0 10px;
+    line-height: 1.5;
+}
+.l_bottom .line .l_right {
+	position: absolute;
+	right: 0;
+	top: 50%;
+	width: 94px;
+	height: 1px;
+	background-image: url(../images/thirdLine-reverse.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.l_bottom .other {
+	margin-bottom: 10px;
+	text-align: center;
+}
+.l_bottom .other a {
+	display: inline-block;
+	margin: 0 11px;
+}
+.l_bottom .other a i {
+	font-size: 40px;
+	color: #ccc;
+}
+/*main E*/
+/*footer S*/
+.footer_inner {
+	min-height: 86px;
+}
+.footer_inner p {
+	text-align: center;
+	height: 20px;
+	line-height: 26px;
+	font-size: 12px;
+	color: #999;
+	margin-bottom: 5px;
+}
+.footer_inner p a:hover {
+	text-decoration: underline;
+}
+.footer_inner p em {
+	display: inline-block;
+	margin: 0 15px;
+}
+/*footer E*/

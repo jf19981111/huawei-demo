@@ -1,0 +1,44 @@
+[
+	{
+		"id" : "001",
+		"phoneName" : "【老用户专享】HUAWEI Mate 20 6GB+64GB 全网通版（亮黑色）",
+		"price" : "￥3999",
+		"src" : "../images/bigImg1.png"
+	},
+	{
+		"id" : "002",
+		"phoneName" : "HUAWEI Mate 20 Pro (UD) 8GB+128GB 全网通版（翡冷翠）",
+		"price" : "￥5999",
+		"src" : "../images/bigImg2.png"
+	},
+	{
+		"id" : "003",
+		"phoneName" : "HUAWEI P20 6GB+64GB 全网通版（极光色）",
+		"price" : "￥3388",
+		"src" : "../images/bigImg3.png"
+	},
+	{
+		"id" : "004",
+		"phoneName" : "华为 HUAWEI nova 4 4800万超广角三摄 高配 8GB+128GB 全网通版（贝母白）",
+		"price" : "￥3399",
+		"src" : "../images/bigImg4.png"
+	},
+	{
+		"id" : "005",
+		"phoneName" : "华为畅享9 Plus 4GB+128GB 全网通版（樱语粉）",
+		"price" : "￥1699",
+		"src" : "../images/bigImg6.png"
+	},
+	{
+		"id" : "006",
+		"phoneName" : "HUAWEI nova 3 6GB+128GB 全网通版（亮黑色）",
+		"price" : "￥2399",
+		"src" : "../images/bigImg8.png"
+	},
+	{
+		"id" : "007",
+		"phoneName" : "华为畅享8 Plus 4GB+64GB 全网通版（金色）",
+		"price" : "￥1499",
+		"src" : "../images/bigImg8.png"
+	}
+]

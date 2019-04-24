@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>商品详情页</title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/carts.css"/>
+		<script src="../js/jquery.js"></script>
+		<script src="../js/carts.js"></script>
+	</head>
+	<body>
+			<!--sortcut S-->
+			<div id="sortcut">
+				<div class="sortcut_inner container">
+				<!--顶部 左边 -->
+					<div class="s_sub clearfix">
+						<ul>
+							<li><a href="index.html">首页</a></li>
+							<li><a href="#">华为官网</a></li>
+							<li><a href="#">荣耀官网</a></li>
+							<li><a href="#">花粉俱乐部</a></li>
+							<li><a href="#">V码(优购码)</a></li>
+							<li><a href="#">企业购</a></li>
+							<li><a href="#">Select Region</a></li>
+	<!--更多精彩有个二级菜单-->
+							<li>
+								<div id="s-dropdown" class="s-dropdown">
+			                        <div class="h">
+			                            <a href="#" class="icon-dropdown">
+			                            	更多精彩
+			                            	<i class="iconfont icon-xiajiantou"></i>
+			                            </a>
+			                        </div>
+			                        <div class="b" id="more">
+			                            <div class="dropdown-more w-119">
+			                                <dl>
+			                                    <dt><a href="#">EMUI</a></dt>
+			                                    <dt><a href="#')">应用市场</a></dt>
+			                                    <dt><a href="#">华为终端云空间</a></dt>
+			                                    <dt><a href="#">开发者联盟</a></dt>
+			                                </dl>
+			                            </div>
+			                        </div>
+                    			</div>
+							</li>
+						</ul>
+					</div>
+				<!--顶部 右边-->
+	<!--登录注册的js 还有购物车的实现-->
+					<div class="s_main clearfix">
+						<ul>
+							<li>
+								<div>
+									<a href="login.html">请登录</a>
+									<a href="register.html">注册</a>
+								</div>
+							</li>
+							<li><a href="#">我的订单</a></li>
+							<li><a href="#">客户服务</a></li>
+							<li><a href="#">网站导航</a></li>
+							<li><a href="#">手机版</a></li>
+							<li id="mincart_down">
+								<div class="shopping h_wide h">
+									<a href="shopping.html">
+										<i class="iconfont icon-gouwuche"></i>
+										<span>购物车(<span>0</span>)</span>
+									</a>
+								</div>
+								<div class="b" id="mincart">
+									<div class="dropdown-minicart">
+	                                    <div class="minicart-pro-empty " id="minicart-pro-empty">
+	                                        <p><span class="icon-minicart"></span></p>
+	                                        <p id="cartInfo">您的购物车是空的，赶紧选购吧~</p>
+											<a href="shopping.html">去逛逛吧</a>
+	                                    </div>
+	                                    <div class="minicart-pro-list minicart-pro-list-scroll hide" id="minicart-pro-list-block" style="display: none;">
+	                                        <ul id="minicart-goods-list"></ul>
+	                                        <div class="minicart-pro-settleup" id="minicart-pro-settleup" style="display: none;">
+	                                            <p>
+	                                                <span>总计：</span>
+	                                                <span><b id="micro-cart-totalPrice">¥&nbsp;0</b><s id="micro-cart-totalOriginPrice">¥&nbsp;0</s></span>
+	                                            </p>
+	                                            <a class="button-minicart" id="button-minicart-go2confirm" href="javascript:;">结算</a>
+	                                            <a class="button-minicart disabled" id="disbutton-minicart-go2confirm" style="">结算</a>
+	                                        </div>
+	                                    </div>
+                                	</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		<!--sortcut E-->
+		<!--header S-->
+			<div class="header">
+				<div class="header_inner container">
+				<!--logo 部分-->	
+					<div class="logo">
+						<h1>
+							<a href="index.html" title="Vmall.com-华为商城">
+								Vmall.com-华为商城
+								<img src="../images/logo.jpg" />
+							</a>
+							<em></em>
+							<a href="index.html">
+								<img src="../images/huawei.jpg" />
+							</a>
+						</h1>
+					</div>
+				<!--nav 部分-->	
+					<div class="nav">
+						<ul>
+							<li>
+								<a href="#"><span>手机</span></a>
+							</li>
+							<li>
+								<a href="#"><span>笔记本电脑</span></a>
+							</li>
+							<li>
+								<a href="#"><span>平板&穿戴</span></a>
+							</li>
+							<li>
+								<a href="#"><span>智能2家居</span></a>
+							</li>
+							<li>
+								<a href="#"><span>配件</span></a>
+							</li>
+							<li>
+								<a href="#"><span>华为318</span></a>
+							</li>
+						</ul>
+					</div>
+				<!--search 部分-->
+		<!--表单的完善  历史记录什么的-->
+					<div class="search">
+						<form>
+							<input autocomplete="off" id="search" class="txt" type="text" value=""/>
+							<input type="submit" class="sub" value=""/>
+							<i class="iconfont icon-sousuo"></i>
+						</form>
+						<div class="search_key">
+							<div class="s_key" id="s_key">
+								<a href="carts.html">nova4</a>
+								<a href="carts.html">HUAWEI Mate 20</a>
+							</div>
+						</div>
+						<div class="complete" style="top: 179px;left: 954px;">
+							<div class="autoComplete-w1">
+								<div id="autoComplete" class="autoComplete" style="max-height: 400px;width: 285px;">
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		<!--header E-->
+			<div class="hr-10"></div>
+		<!--main S-->
+			<div class="main relative">
+				<div class="main_inner container">
+				<!--面包屑-->
+					<div class="bread">
+						<div class="bread_area">
+							<a href="index.html">首页</a>
+							&nbsp;>&nbsp;
+							<a href="list.html">手机</a>
+							&nbsp;>&nbsp;
+							<a href="carts.html">HUAWEI Mate系列</a>
+							&nbsp;>&nbsp;
+							<span class="note" style="color: #333;">【老用户专享】HUAWEI Mate 20 6GB+64GB 全网通版（亮黑色）</span>
+						</div>
+						<div class="hr-10"></div>
+					</div>
+				<!--product-->
+					<div class="product clearfix">
+						<div class="left">
+							<!--商品图片-->
+							<div class="product_gallery">
+								<div class="relative">
+									<!--图片放大效果-->
+									<div class="product_img">
+										<div class="wrap relative" style="position: absolute;display: block;">
+											<a href="#"  class="cloud_zoom" style="display: block;">
+												<img src="../images/bigImg1.png" style="display: block;"/>
+												<div class="cloud_zoom_lens"></div>
+											</a>
+											<div class="mousetrap"></div>
+											<div class="cloud-zoom-big">
+												<img src="../images/bigImg1.png" style="display: block;"/>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="product_nav">
+									<a href="javascript:;" class="img_prev back"></a>
+									<div class="product_thumb">
+								<!--通过点击来切换图片 鼠标移入 a边框变色 #ca141d-->
+										<ul class="thumb">
+											<li>
+												<a href="#">
+													<img src="../images/smallImg1.png" />
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<img src="../images/smallImg2.png" />
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<img src="../images/smallImg3.png" />
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<img src="../images/smallImg4.png" />
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<img src="../images/smallImg6.png" />
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<img src="../images/smallImg8.png" />
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<img src="../images/smallImg9.png" />
+												</a>
+											</li>
+										</ul>
+									</div>
+									<a href="javascript:;" class="img_next back"></a>
+								</div>
+							</div>
+						</div>
+
+						<div class="right relative">
+							<div class="product_property">
+								<div class="product_meta">
+									<h1 class="note">【老用户专享】HUAWEI Mate 20 6GB+64GB 全网通版（亮黑色</h1>
+									<div class="slogan">
+										<span style="color: #ca141d;">【老用户专属权益】①领券减100②赠小天鹅蓝牙音箱③赠价值199元官方碎屏险④享6期分期免息</span>
+										<span>老用户指：在华为品牌系列手机设备上注册或登录过的华为帐号，以及在Vmall上购买过华为品牌系列手机的用户（机型明细见公告）。在上述设备注册的华为帐号需注册时间大于2个工作日以上，才能参与老用户专场购买。</span>
+									</div>
+								</div>
+								<div class="productInfo">
+									<div class="product_price clearfix">
+										<label>价&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;格</label>
+										<span class="n_price">￥3999.00</span>
+									</div>
+									<div class="product_price clearfix">
+										<label>已 选 商 品</label>
+										<span class="note">亮黑色 / 全网通 6GB+64GB / 官方标配 / 单品  / 单品</span>
+									</div>
+									<div>
+										<img src="../images/cut.png" style="width: 700px;height: 266px;"/>
+									</div>
+								</div>
+								<div class="product_option clearfix">
+									<!--商品购买数量-->
+									<div class="product_amount">
+										<input class="pro_stock" type="text" placeholder="1" value="1"/>
+										<p class="stock_btn">
+											<a href="#">+</a>
+											<a href="#">-</a>
+										</p>
+									</div>
+									<div class="product_amount hide" style="display: none;">
+										<input class="pro_stock" type="text" placeholder="1" value="1" disabled/>
+										<p class="stock_btn">
+											<a href="#" class="disabled">+</a>
+											<a href="#" class="disabled">-</a>
+										</p>
+									</div>
+									<div class="button_main">
+										<div class="operation">
+											<a href="shopping.html" class="oper1">
+												<span>加入购物车</span>
+											</a>
+											<a href="#" class="oper2">
+												<span>立即下单</span>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="line" style="width: 100%;height: 1px;background: #ddd;"></div>
+					</div>
+				<!--显示标题-->
+					<div class="product_tab">
+						<div class="p_title">
+							<p>
+								<a href="#pictures" class="selected">
+									商品详情
+									<em></em>
+								</a>
+								<a href="#format">
+									规格参数
+									<em></em>
+								</a>
+								<a href="#package">
+									包装与售后
+									<em></em>
+								</a>
+							</p>
+							<div class="product_tab_btn">
+								<a href="shopping.html">加入购物车</a>
+							</div>
+						</div>
+				</div>		
+				
+		</div>
+		<!--main E-->
+		<!--商品图片详情 S-->	
+			<div id="pictures" class="pictures relative">
+				<div class="kind_pictures">
+					<p>
+						<img src="../images/01.jpg" />
+					</p>	
+					<p>
+						<img src="../images/02.jpg" />
+					</p>
+					<p>
+						<img src="../images/03.png" />
+					</p>
+					<p>
+						<img src="../images/04.png" />
+					</p>
+					<p>
+						<img src="../images/05.png" />
+					</p>
+					<p>
+						<img src="../images/06.png" />
+					</p>
+					<p>
+						<img src="../images/07.png" />
+					</p>
+					<p>
+						<img src="../images/08.png" />
+					</p>
+					<p>
+						<img src="../images/09.png" />
+					</p>
+					<p>
+						<img src="../images/10.png" />
+					</p>
+					<p>
+						<img src="../images/11.png" />
+					</p>
+					<p>
+						<img src="../images/12.png" />
+					</p>
+					<p>
+						<img src="../images/13.png" />
+					</p>
+					<p>
+						<img src="../images/14.png" />
+					</p>
+					<p>
+						<img src="../images/15.png" />
+					</p>
+					<p>
+						<img src="../images/16.png" />
+					</p>
+					<p>
+						<img src="../images/17.png" />
+					</p>
+					<p>
+						<img src="../images/18.png" />
+					</p>
+					<p>
+						<img src="../images/19.png" />
+					</p>
+					<p>
+						<img src="../images/20.png" />
+					</p>
+					<p>
+						<img src="../images/21.png" />
+					</p>
+					<p>
+						<img src="../images/22.png" />
+					</p>
+					<p>
+						<img src="../images/23.png" />
+					</p>
+					<p>
+						<img src="../images/24.png" />
+					</p>
+					<p>
+						<img src="../images/25.png" />
+					</p>
+				</div>	
+				<div class="format_shade hide format_hide" style="display: block;">
+					<p>
+						<a href="javascript:;" class="format_shade_btn format_hide_btn">查看全部产品详情</a>
+					</p>
+				</div>
+			</div>			
+		<!--商品图片详情 E-->
+		<!--规格参数 S-->
+			<div id="format" class="format relative">
+				<div class="format_inner container">
+					<h2 class="format_title">规格参数</h2>
+					<div class="hr-30"></div>
+					<div class="param_content clearfix">
+						<h2>主要参数</h2>
+						<ul>
+							<li class="clearfix">
+								<label>传播名</label>
+								<span>HUAWEI Mate 20</span>
+							</li>
+							<li class="clearfix">
+								<label>后置摄像头</label>
+								<span>后置徕卡三摄： 1200万像素（广角，f/1.8光圈）+1600万像素（超广角，f/2.2光圈）+800万像素（长焦，f/2.4光圈），支持自动对焦（激光对焦/相位对焦/反差对焦），支持AIS防抖。 备注：不同拍照模式的照片像素可能有差异，请以实际为准。</span>
+							</li>
+							<li class="clearfix">
+								<label>前置摄像头</label>
+								<span>前置单摄： 2400万像素，f/2.0光圈，支持固定焦距。 备注： *不同拍照模式的照片像素可能有差异，请以实际为准。 *前置摄像头采用2480万像素CMOS传感器（理论值），有效像素2400万（理论值）。</span>
+							</li>
+							<li class="clearfix">
+								<label>电池容量</label>
+								<span>4000mAh（典型值）</span>
+							</li>
+							<li class="clearfix">
+								<label>上市时间</label>
+								<span>2018年10月</span>
+							</li>
+							<li class="clearfix">
+								<label>屏幕尺寸</label>
+								<span>6.53英寸（备注：显示屏采用圆角设计，按照标准矩形测量时，屏幕的对角线长度是 6.53 英寸 (实际可视区域略小)）</span>
+							</li>
+							<li class="clearfix">
+								<label>运行内存（RAM）</label>
+								<span>6GB （备注：可使用的内存容量小于 此值，因为手机软件占用部分空间）</span>
+							</li>
+							<li class="clearfix">
+								<label>屏幕色彩</label>
+								<span>1670万色，DCI-P3</span>
+							</li>
+							<li class="clearfix">
+								<label>机身内存（ROM）</label>
+								<span>64GB（备注：可使用的内存容量小于此值，因为手机软件占用部分空间）</span>
+							</li>
+							<li class="clearfix">
+								<label>最大支持扩展</label>
+								<span>256GB NM存储卡（非标配，需另行购买）</span>
+							</li>
+							<li class="clearfix">
+								<label>分辨率</label>
+								<span>FHD+ 2244x1080 像素</span>
+							</li>
+							<li class="clearfix">
+								<label>CPU型号</label>
+								<span>HUAWEI Kirin 980 （麒麟980）</span>
+							</li>
+							<li class="clearfix">
+								<label>CPU核数</label>
+								<span>八核</span>
+							</li>
+							<li class="clearfix">
+								<label>双卡</label>
+								<span>双卡双待</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="format_shade hide param_hide" style="display: block;">
+					<p>
+						<a href="javascript:;" class="format_shade_btn param_hide_btn">查看全部参数</a>
+					</p>
+				</div>
+				<div class="param_detail">
+					<div class="param_detail_inner container">
+						<div class="param_content clearfix">
+							<h2>主体</h2>
+							<ul>
+								<li class="clearfix">
+									<label>品牌</label>
+									<span>华为 HUAWEI</span>
+								</li>
+								<li class="clearfix">
+									<label>传播名</label>
+									<span>HUAWEI Mate 20</span>
+								</li>
+								<li class="clearfix">
+									<label>上市时间</label>
+									<span>2018年10月</span>
+								</li>
+								<li class="clearfix">
+									<label>操作系统</label>
+									<span>华为EMUI9.0.0(兼容Android 9)</span>
+								</li>
+								<li class="clearfix">
+									<label>用户界面</label>
+									<span>EMUI 9.0.0</span>
+								</li>
+								<li class="clearfix">
+									<label>CPU型号</label>
+									<span>HUAWEI Kirin 980 （麒麟980）</span>
+								</li>
+								<li class="clearfix">
+									<label>CPU核数</label>
+									<span>八核</span>
+								</li>
+								<li class="clearfix">
+									<label>CPU主频</label>
+									<span>2 x Cortex-A76 Based 2.6GHz+ 2 x Cortex-A76 Based 1.92GHz + 4 x Cortex-A55 1.8GHz</span>
+								</li>
+								<li class="clearfix">
+									<label>GPU</label>
+									<span>Mali G76  720MHz</span>
+								</li>
+								<li class="clearfix">
+									<label>NPU</label>
+									<span>双NPU（神经网络处理单元）</span>
+								</li>
+								<li class="clearfix">
+									<label>双卡</label>
+									<span>双卡双待</span>
+								</li>
+								<li class="clearfix">
+									<label>输入方式</label>
+									<span>百度输入法华为版</span>
+								</li>
+								<li class="clearfix">
+									<label>系统导航方式</label>
+									<span>手势导航、屏幕内三键导航、悬浮导航</span>
+								</li>
+							</ul>
+						</div>
+						<div class="param_content clearfix">
+							<h2>网络</h2>
+							<ul>
+								<li class="clearfix">
+									<label>网络制式</label>
+									<span>支持移动/联通/电信 4G+/4G/3G/2G     备注： *卡槽1、2可以任意切换为默认移动数据卡。 *如果两张都是电信卡，副卡（非默认移动数据卡）必须开通电信VoLTE业务，才能同时使用电信双卡。 *4G网络使用，需要根据运营商网络和相关业务部署情况确定是否支持。</span>
+								</li>
+								<li class="clearfix">
+									<label>4G网络制式</label>
+									<span>主卡/副卡： 4G网络制式 移动4G（TD-LTE）/联通4G（TD-LTE/LTE FDD）/电信 4G（TD-LTE/LTE FDD）</span>
+								</li>
+								<li class="clearfix">
+									<label>3G网络制式</label>
+									<span>主卡：3G网络制式 移动3G（TD-SCDMA）/联通3G（WCDMA）/电信3G（CDMA 2000）；副卡：3G网络制式 联通3G（WCDMA）</span>
+								</li>
+								<li class="clearfix">
+									<label>2G网络制式</label>
+									<span>主卡/副卡：2G网络制式 移动2G（GSM）/联通2G（GSM）/电信2G（CDMA 1X） 备注：*电信双卡时，副卡（非默认移动数据卡）不支持电信2G</span>
+								</li>
+								<li class="clearfix">
+									<label>网络频率</label>
+									<span>主卡： LTE FDD:B1/2/3/4/5/6/7/8/9/12/17/18/19/20/26 TD-LTE:B34/38/39/40/41 (2535~2655 MHz) UMTS(WCDMA)/HSPA+/DC-HSDPA:B1/2/4/5/6/8/19 TD-SCDMA:B34/39 CDMA（主副卡二选一）:BC0( 800MHz)；(仅限中国电信（中国大陆+澳门）) GSM:B2/3/5/8 副卡： LTE FDD:B1/2/3/4/5/6/7/8/9/12/17/18/19/20/26 TD-LTE:B34/38/39/40/41(2535~2655 MHz) UMTS(WCDMA):B1/2/4/5/6/8/19 CDMA:BC0( 800MHz)(仅限中国电信（中国大陆+澳门）) GSM:B2/3/5/8 备注：各个地区的网络和频段可能有所不同，具体取决于当地运营商以及您所在的位置。</span>
+								</li>
+								<li class="clearfix">
+									<label>数据业务</label>
+									<span>TDD-LTE/FDD-LTE/TD-SCDMA/WCDMA/HSPA+/DC-HSDPA/EVDO/CDMA1X/EDGE/GPRS 备注：*各个地区的网络和频段可能有所不同，具体取决于当地运营商以及您所在的位置。*CDMA仅限中国电信（中国大陆+澳门）。*如果两张都是电信卡，只有设为默认移动数据的电信卡可以使用2G/3G/4G，另一张电信卡只能用4G。</span>
+								</li>
+								<li class="clearfix">
+									<label>浏览器</label>
+									<span>支持（华为EMUI 浏览器）</span>
+								</li>
+								<li class="clearfix">
+									<label>副卡是否可以上网</label>
+									<span>是，*用户需打开“通话时可上网”开关，可以在副卡通话时上网</span>
+								</li>
+								
+							</ul>
+						</div>
+						<div class="param_content clearfix">
+							<h2>屏幕</h2>
+							<ul>
+								<li class="clearfix">
+									<label>屏幕尺寸</label>
+									<span>6.53英寸（备注：显示屏采用圆角设计，按照标准矩形测量时，屏幕的对角线长度是 6.53 英寸 (实际可视区域略小)）</span>
+								</li>
+								<li class="clearfix">
+									<label>屏幕色彩</label>
+									<span>1670万色，DCI-P3</span>
+								</li>
+								<li class="clearfix">
+									<label>屏幕类型</label>
+									<span>TFT LCD（IPS）</span>
+								</li>
+								<li class="clearfix">
+									<label>分辨率</label>
+									<span>FHD+ 2244x1080 像素</span>
+								</li>
+								<li class="clearfix">
+									<label>屏幕像素密度PPI</label>
+									<span>381 PPI</span>
+								</li>
+								<li class="clearfix">
+									<label>触摸屏</label>
+									<span>多点触控触摸屏，最多支持10点触控</span>
+								</li>
+							</ul>
+						</div>
+						<div class="param_content clearfix">
+							<h2>屏幕</h2>
+							<ul>
+								<li class="clearfix">
+									<label>屏幕尺寸</label>
+									<span>6.53英寸（备注：显示屏采用圆角设计，按照标准矩形测量时，屏幕的对角线长度是 6.53 英寸 (实际可视区域略小)）</span>
+								</li>
+								<li class="clearfix">
+									<label>屏幕色彩</label>
+									<span>1670万色，DCI-P3</span>
+								</li>
+								<li class="clearfix">
+									<label>屏幕类型</label>
+									<span>TFT LCD（IPS）</span>
+								</li>
+								<li class="clearfix">
+									<label>分辨率</label>
+									<span>FHD+ 2244x1080 像素</span>
+								</li>
+								<li class="clearfix">
+									<label>屏幕像素密度PPI</label>
+									<span>381 PPI</span>
+								</li>
+								<li class="clearfix">
+									<label>触摸屏</label>
+									<span>多点触控触摸屏，最多支持10点触控</span>
+								</li>
+							</ul>
+						</div>
+						<div class="param_content clearfix">
+							<h2>屏幕</h2>
+							<ul>
+								<li class="clearfix">
+									<label>屏幕尺寸</label>
+									<span>6.53英寸（备注：显示屏采用圆角设计，按照标准矩形测量时，屏幕的对角线长度是 6.53 英寸 (实际可视区域略小)）</span>
+								</li>
+								<li class="clearfix">
+									<label>屏幕色彩</label>
+									<span>1670万色，DCI-P3</span>
+								</li>
+								<li class="clearfix">
+									<label>屏幕类型</label>
+									<span>TFT LCD（IPS）</span>
+								</li>
+								<li class="clearfix">
+									<label>分辨率</label>
+									<span>FHD+ 2244x1080 像素</span>
+								</li>
+								<li class="clearfix">
+									<label>屏幕像素密度PPI</label>
+									<span>381 PPI</span>
+								</li>
+								<li class="clearfix">
+									<label>触摸屏</label>
+									<span>多点触控触摸屏，最多支持10点触控</span>
+								</li>
+							</ul>
+						</div>
+						<div class="param_content clearfix">
+							<h2>娱乐功能</h2>
+							<ul>
+								<li class="clearfix">
+									<label>收音机</label>
+									<span>支持</span>
+								</li>
+							</ul>
+						</div>
+						<div class="param_content clearfix">
+							<h2>屏幕</h2>
+							<ul>
+								<li class="clearfix">
+									<label>屏幕尺寸</label>
+									<span>6.53英寸（备注：显示屏采用圆角设计，按照标准矩形测量时，屏幕的对角线长度是 6.53 英寸 (实际可视区域略小)）</span>
+								</li>
+								<li class="clearfix">
+									<label>屏幕色彩</label>
+									<span>1670万色，DCI-P3</span>
+								</li>
+								<li class="clearfix">
+									<label>屏幕类型</label>
+									<span>TFT LCD（IPS）</span>
+								</li>
+								<li class="clearfix">
+									<label>分辨率</label>
+									<span>FHD+ 2244x1080 像素</span>
+								</li>
+								<li class="clearfix">
+									<label>屏幕像素密度PPI</label>
+									<span>381 PPI</span>
+								</li>
+								<li class="clearfix">
+									<label>触摸屏</label>
+									<span>多点触控触摸屏，最多支持10点触控</span>
+								</li>
+							</ul>
+						</div>
+						<div class="param_content clearfix">
+							<h2>网络</h2>
+							<ul>
+								<li class="clearfix">
+									<label>网络制式</label>
+									<span>支持移动/联通/电信 4G+/4G/3G/2G     备注： *卡槽1、2可以任意切换为默认移动数据卡。 *如果两张都是电信卡，副卡（非默认移动数据卡）必须开通电信VoLTE业务，才能同时使用电信双卡。 *4G网络使用，需要根据运营商网络和相关业务部署情况确定是否支持。</span>
+								</li>
+								<li class="clearfix">
+									<label>4G网络制式</label>
+									<span>主卡/副卡： 4G网络制式 移动4G（TD-LTE）/联通4G（TD-LTE/LTE FDD）/电信 4G（TD-LTE/LTE FDD）</span>
+								</li>
+								<li class="clearfix">
+									<label>3G网络制式</label>
+									<span>主卡：3G网络制式 移动3G（TD-SCDMA）/联通3G（WCDMA）/电信3G（CDMA 2000）；副卡：3G网络制式 联通3G（WCDMA）</span>
+								</li>
+								<li class="clearfix">
+									<label>2G网络制式</label>
+									<span>主卡/副卡：2G网络制式 移动2G（GSM）/联通2G（GSM）/电信2G（CDMA 1X） 备注：*电信双卡时，副卡（非默认移动数据卡）不支持电信2G</span>
+								</li>
+								<li class="clearfix">
+									<label>网络频率</label>
+									<span>主卡： LTE FDD:B1/2/3/4/5/6/7/8/9/12/17/18/19/20/26 TD-LTE:B34/38/39/40/41 (2535~2655 MHz) UMTS(WCDMA)/HSPA+/DC-HSDPA:B1/2/4/5/6/8/19 TD-SCDMA:B34/39 CDMA（主副卡二选一）:BC0( 800MHz)；(仅限中国电信（中国大陆+澳门）) GSM:B2/3/5/8 副卡： LTE FDD:B1/2/3/4/5/6/7/8/9/12/17/18/19/20/26 TD-LTE:B34/38/39/40/41(2535~2655 MHz) UMTS(WCDMA):B1/2/4/5/6/8/19 CDMA:BC0( 800MHz)(仅限中国电信（中国大陆+澳门）) GSM:B2/3/5/8 备注：各个地区的网络和频段可能有所不同，具体取决于当地运营商以及您所在的位置。</span>
+								</li>
+								<li class="clearfix">
+									<label>数据业务</label>
+									<span>TDD-LTE/FDD-LTE/TD-SCDMA/WCDMA/HSPA+/DC-HSDPA/EVDO/CDMA1X/EDGE/GPRS 备注：*各个地区的网络和频段可能有所不同，具体取决于当地运营商以及您所在的位置。*CDMA仅限中国电信（中国大陆+澳门）。*如果两张都是电信卡，只有设为默认移动数据的电信卡可以使用2G/3G/4G，另一张电信卡只能用4G。</span>
+								</li>
+								<li class="clearfix">
+									<label>浏览器</label>
+									<span>支持（华为EMUI 浏览器）</span>
+								</li>
+								<li class="clearfix">
+									<label>副卡是否可以上网</label>
+									<span>是，*用户需打开“通话时可上网”开关，可以在副卡通话时上网</span>
+								</li>
+								
+							</ul>
+						</div>
+						<div class="param_content clearfix" style="margin-bottom: 100px;">
+							<h2>商品编码</h2>
+							<ul>
+								<li class="clearfix">
+									<label>2601010068601</label>
+									<span></span>
+								</li>
+							</ul>
+						</div>
+						
+					
+					</div>
+				</div>
+			</div>	
+		<!--规格参数 E-->
+		<div class="hr-60"></div>
+		<!--包装 S-->
+			<div id="package" class="package">
+				<div class="package_inner container">
+					<h2 class="format_title">包装</h2>
+					<div class="package_content">
+						<p>
+							<span style="color: #333;display: block;">
+								<em>手机 X 1</em>
+								<em>电池（内置） X 1</em>
+								<em>华为SuperCharge充电器 X 1</em>
+								<em>Type-C 数据线 X 1</em>
+								<em>半入耳式线控耳机 X 1</em>
+								<em>TPU保护壳 X 1</em>
+								<em>快速指南 X 1</em>
+								<em>三包凭证 X 1</em>
+								<em>取卡针 X 1</em>
+								<em>（备注：最终以实物为准）</em>
+							</span>
+						</p>
+					</div>
+				</div>
+			</div>
+		<!--包装 E-->
+		<!--售后服务 S-->
+			<div class="customer">
+				<div class="customer_inner container">
+					<h2 class="format_title">售后服务</h2>
+					<div class="service_word">
+						<div class="service_content">
+							<p>
+								<span>本产品全国联保，享受三包服务，质保期为：一年质保</span>
+								<span>如因质量问题或故障，凭厂商维修中心或特约维修点的质量检测证明，享受7天内退货，15日内换货，15日以上在质保期内享受免费保修等三包服务！</span>
+								<span>售后服务电话：400-830-8300</span>
+								<span>华为消费者BG官网： https://consumer.huawei.com/cn/</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		<!--售后服务 E-->
+		<!--免费声明 S-->
+			<div class="about container">
+				<ul style="font-size: 14px;">
+					<li>*因可能存在系统缓存，页面更新导致价格变动异常等不确定性情况出现，如您发现活动商品标价或促销信息有异常，请您立即联系我们，以便我们及时补正。</li>
+					<li>*以上页面中的产品图片及屏幕内容仅作示意，实物产品效果（包括但不限于外观、颜色、尺寸）和屏幕显示内容（包括但不限于背景、UI、配图）可能略有差异，请以实物为准。</li>
+					<li>*以上页面中的数据为理论值，均来自华为内部实验室，于特定测试环境下所得（请见各项具体说明），实际使用中可能因产品个体差异、软件版本、使用条件和环境因素不同略有不同，请以实际使用的情况为准。</li>
+					<li>*为提供尽可能准确的产品信息、规格参数、产品特性，华为或荣耀可能实时调整和修订以上页面中的文字表述、图片效果等内容，以求与实际产品性能、规格、指数、零部件等信息相匹配，由于产品批次和生产供应因素实时变化，如遇确有进行上述修改和调整必要的情形，恕不专门通知。</li>
+				</ul>
+				<div class="hr-60"></div>
+			</div>
+		<!--免费声明 E-->
+		<!--hungBar S-->
+				<div class="hungBar">
+					<div class="hungBar_content">
+						<a href="javascript:;" title="购物车">
+							<span style="display: none;">购物车</span>
+							<i class="iconfont icon-gouwuche"></i>
+						</a>
+						<a href="javascript:;" title="在线客服">
+							<span style="display: none;">在线客服</span>
+							<i class="iconfont icon-zaixiankefu"></i>
+						</a>
+						<a href="javascript:;" title="意见反馈">
+							<span style="display: none;">意见反馈</span>
+							<i class="iconfont icon-yijianfankui"></i>
+						</a>
+						<a href="javascript:;" class="back" title="返回顶部" style="display: none;">
+							<span style="display: none;">返回顶部</span>
+							<i class="iconfont icon-fanhuidingbu"></i>
+						</a>
+					</div>
+				</div>
+		<!--hungBar E-->
+		<!--footer S-->
+			<div class="footer">
+				<div class="footer_inner container">
+					<div class="slogan">
+						<ul>
+							<li class="s1">
+								<a href="#">
+									<i></i>
+									百强企业 品质保证
+								</a>
+							</li>
+							<li class="s2">
+								<a href="#">
+									<i></i>
+									七天退货 15天换货
+								</a>
+							</li>
+							<li class="s3">
+								<a href="#">
+									<i></i>
+									48元起免运费
+								</a>
+							</li>
+							<li class="s4">
+								<a href="#">
+									<i></i>
+									1000家维修网点 全国联保
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="service clearfix">
+						<div class="s_left">
+							<dl class="s1">
+								<dt>
+									<p class="s_title">购物相关</p>
+								</dt>
+								<dd>
+									<ol>
+										<li>
+											<a href="#">购物指南</a>
+										</li>
+										<li>
+											<a href="#">配送方式</a>
+										</li>
+										<li>
+											<a href="#">支付方式</a>
+										</li>
+										<li>
+											<a href="#">常见问题</a>
+										</li>
+									</ol>
+								</dd>
+							</dl>
+							<dl class="s2">
+								<dt>
+									<p class="s_title">保修与退换货</p>
+								</dt>
+								<dd>
+									<ol>
+										<li>
+											<a href="#">保修政策</a>
+										</li>
+										<li>
+											<a href="#">退换货政策</a>
+										</li>
+										<li>
+											<a href="#">退换货流程</a>
+										</li>
+										<li>
+											<a href="#">保修状态查询</a>
+										</li>
+										<li>
+											<a href="#">配件防伪查询</a>
+										</li>
+									</ol>
+								</dd>
+							</dl>
+							<dl class="s3">
+								<dt>
+									<p class="s_title">维修与技术支持</p>
+								</dt>
+								<dd>
+									<ol>
+										<li>
+											<a href="#">售后网点</a>
+										</li>
+										<li>
+											<a href="#">预约维修</a>
+										</li>
+										<li>
+											<a href="#">手机寄修</a>
+										</li>
+										<li>
+											<a href="#">配件价格查询</a>
+										</li>
+										<li>
+											<a href="#">上门服务</a>
+										</li>
+									</ol>
+								</dd>
+							</dl>
+							<dl class="s4">
+								<dt>
+									<p class="s_title">特色服务</p>
+								</dt>
+								<dd>
+									<ol>
+										<li>
+											<a href="#">防伪查询</a>
+										</li>
+										<li>
+											<a href="#">补够保障</a>
+										</li>
+										<li>
+											<a href="#">以旧换新</a>
+										</li>
+										<li>
+											<a href="#">礼品包装</a>
+										</li>
+									</ol>
+								</dd>
+							</dl>
+							<dl class="s5">
+								<dt>
+									<p class="s_title">关于我们</p>
+								</dt>
+								<dd>
+									<ol>
+										<li>
+											<a href="#">公司介绍</a>
+										</li>
+										<li>
+											<a href="#">华为商城简介</a>
+										</li>
+										<li>
+											<a href="#">华为线下门店</a>
+										</li>
+										<li>
+											<a href="#">荣耀线下门店</a>
+										</li>
+										<li>
+											<a href="#">诚征英才</a>
+										</li>
+										<li>
+											<a href="#">意见反馈</a>
+										</li>
+									</ol>
+								</dd>
+							</dl>
+							<dl class="s6">
+								<dt>
+									<p class="s_title">友情链接</p>
+								</dt>
+								<dd>
+									<ol>
+										<li>
+											<a href="#">华为集团</a>
+										</li>
+										<li>
+											<a href="#">华为CBG官网</a>
+										</li>
+										<li>
+											<a href="#">荣耀官网</a>
+										</li>
+										<li>
+											<a href="#">花粉俱乐部</a>
+										</li>
+										<li>
+											<a href="#">网站地图</a>
+										</li>
+									</ol>
+								</dd>
+							</dl>
+						</div>
+						<div class="s_right">
+							<dl class="s7">
+								<dt>
+									<p class="s_title">400-088-6888</p>
+								</dt>
+								<dd>
+									<ol>
+										<li>
+											7x24小时客服热线（仅收市话费）
+										</li>
+									</ol>
+								</dd>
+								<dd>
+									<a href="#" class="s_btn">
+										<i class="iconfont icon-zaixiankefu"></i>
+										在线客服
+									</a>
+								</dd>
+							</dl>
+							<div class="service_code">
+								 <h2>关注Vmall：</h2>
+								 <ul class="clearfix">
+								 	<li>
+								 		<a href="#"></a>
+								 	</li>
+								 	<li>
+								 		<a href="#"></a>
+								 	</li>
+								 	<li>
+								 		<a href="#"></a>
+								 	</li>
+								 	<li>
+								 		<a href="#"></a>
+								 	</li>
+								 </ul>
+							</div>
+						</div>
+					</div>
+					<div class="f_bto">
+						<p class="f_logo">
+							<a href="#">
+								<img src="../images/footer_logo.png"/>
+							</a>
+						</p>
+						<div class="f1">
+							<ul class="f_link clearfix">
+								<li>
+									<a href="#">华为集团</a>
+								</li>
+								<li>
+									<a href="#">华为CBG官网</a>
+								</li>
+								<li>
+									<a href="#">荣耀官网</a>
+								</li>
+								<li>
+									<a href="#">花粉俱乐部</a>
+								</li>
+								<li>
+									<a href="#">华为应用市场</a>
+								</li>
+								<li>
+									<a href="#">EMUI</a>
+								</li>
+								<li>
+									<a href="#">华为终端云空间</a>
+								</li>
+								<li>
+									<a href="#">开发者联盟</a>
+								</li>
+								<li>
+									<a href="#">华为商城手机版</a>
+								</li>
+								<li>
+									<a href="#">网站地图</a>
+								</li>
+							</ul>
+							<a href="#" title="隐私声明">隐私声明</a>
+							<a href="#" title="服务协议">服务协议</a>
+							<a href="#" title="服务协议">COOKIES</a>
+							Copyright © 2012-2019 华为软件技术有限公司 版权所有 保留一切权利 公安备案
+							<a href="#">苏公网安备32011402010009号</a><br />
+							<a href="#">苏ICP备17040376号-6</a>
+							<a href="#">增值电信业务经营许可证：苏B2-20130048号</a>
+							<em>|</em>
+							<a href="#">网络文化经营许可证：苏网文[2015] 1599-026号</a>
+							备案主体编号：32201911426827
+						</div>
+						<p class="f_img">
+							<a href="#">
+								<i></i>
+							</a>
+							<a href="#">
+								<i></i>
+							</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		<!--footer E-->
+	</body>
+</html>
